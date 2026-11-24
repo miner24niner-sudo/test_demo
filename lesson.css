@@ -1,0 +1,163 @@
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color:whitesmoke;
+	/*overflow:hidden;*/
+	scrollbar-color:orangered yellow;
+}
+
+textarea {
+	resize:none;
+	/*Now you can't resize the text box muahhahhah*/
+	/*You are filled with the power of not being able to resize the text box*/
+}
+
+.check-answer {
+	/*"center" the button to the bottom right corner*/
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin-bottom:15px;
+	margin-right:15px;
+
+	/*button size*/
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:100px;
+	padding-right:100px;
+	border-radius:25px;
+
+	/*misc*/
+	background-color:lightgreen;
+	cursor:pointer;
+	font-size:25px;
+	letter-spacing:5px;
+}
+
+.label {
+	display:inline;
+}
+
+.check-answer:hover {
+	background-color:green;
+}
+
+.text-box {
+	padding:10px;
+	width:30vw;
+	height:10vh;
+}
+
+.question-box {
+	height:100vh;
+	font-size:25px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.tooltip-box {
+	position:relative;
+	background-color:whitesmoke;
+	margin-top:1vh;
+	margin-bottom:1vh;
+	height:0;
+	z-index:1;
+	display:block;
+}
+
+.tooltip-content {
+	position:relative;
+	text-align:center;
+	color:black;
+	padding:1px;
+}
+
+.add-tooltip {
+	color:#ea7500;
+}
+
+.result-box {
+	width:100%;
+	height:11vh;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:whitesmoke;
+}
+
+.question-type-indicator {
+	font-size:20px;
+	color:dimgray;
+}
+
+.current-question-box < h2 {
+	display:inline;
+}
+
+.result {
+	padding-top:1%;
+	padding-left:1%;
+	color:black;
+}
+
+.correct-answer {
+	padding-left:1%;
+	/*padding-bottom:1%;*/
+	color:black;
+}
+
+.progress-box {
+	margin-top:1vh;
+	margin-left:25vw;
+	width:50%;
+	background-color:gray;
+	border-radius:10px;
+}
+
+.progress-bar {
+	position:relative;
+	background-color:#ea7500;
+	border-radius:10px;
+	height: 5vh;
+	width:0%;
+	transition-property:width;
+	transition-duration:0.30s;
+	transition-timing-function:ease-out;
+}
+
+.accent-button {
+	width:3vw;
+	display:absolute;
+	margin-left:1vw;
+	margin-right:1vw;
+	text-align:center;
+
+	background-color:#ea7500;
+	border:2px solid black;
+}
+
+.accent-button:nth-child(1) {
+	margin-left:2.5vw;
+}
+
+.accent-button:hover {
+	filter:brightness(75%);
+}
+
+/*changes the colors of the textbox if the answer was correct or incorrect*/
+
+.correct {
+	background-color:seagreen;
+	color:whitesmoke;
+}
+
+.incorrect {
+	background-color:indianred;
+	color:whitesmoke;
+}
+

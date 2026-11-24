@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="lesson.css" rel="stylesheet">
+	<script defer src="lesson.js"></script>
+	<title>Test Demo</title>
+</head>
+<body>
+	<div class="progress-box">
+		<div class="progress-bar"></div>
+	</div>
+	<div class="question-box">
+		<form name="question-form">
+			<h2 class="question-type-indicator"></h2>
+			<div class="current-question-box">
+				<h2 class="label" for="answer"></h2>
+			</div>
+				<div class="tooltip-box">
+					<p class="tooltip-content"></p>
+				</div>
+			<textarea class="text-box" id="answer" name="text-box"></textarea>
+				<div class="accent-box">
+					<button class="accent-button">ā</button>
+					<button class="accent-button">ē</button>
+					<button class="accent-button">ī</button>
+					<button class="accent-button">ō</button>
+					<button class="accent-button">ū</button>
+					<button class="accent-button" style="display:none;">ñ</button>
+				</div>
+				<div class="result-box">
+					<h2 class="result"></h2>
+					<p class="correct-answer"></p>
+				</div>
+			<button class="check-answer">Check</button>
+		</form>
+	</div>
+</body>
+</html>
