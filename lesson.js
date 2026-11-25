@@ -1,3 +1,5 @@
+//NOTE: This is a reduced version of lesson.js. To see the full document, see the main branch.
+
 const musicState = window.sessionStorage.getItem('music-state');
 
 //Limewire Music Player
