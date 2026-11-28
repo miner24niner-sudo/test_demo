@@ -3,6 +3,8 @@ if (button !== null) {
 button.addEventListener("click", (event) => {
 	if (window.sessionStorage.getItem('play-music') === "false") { 
 		window.sessionStorage.setItem('play-music', true)
+		window.sessionStorage.setItem('current-audio', "./snd/flowerman.ogg")
+		window.sessionStorage.setItem('toast-data', "Flower Man - Toby Fox")
 		currentAudio.currentTime = 0 //comment out if not wanted
 	}
 	else if (window.sessionStorage.getItem('play-music') === "true") {
